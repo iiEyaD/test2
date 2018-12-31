@@ -35,7 +35,7 @@ client.on('ready', () => {
     console.log(`Users! [ " ${client.users.size} " ]`);
     console.log('')
     console.log('╚[════════════════════════════════════]╝')
-          client.user.setActivity("#help ً",{type: ' Online '});   
+          client.user.setActivity("i!help ً",{type: ' Online '});   
 });
 
 client.on('ready', () => {
@@ -45,11 +45,11 @@ client.on('ready', () => {
     console.log(`on  ${client.guilds.size} Servers `);
     console.log(`~~~~~~~~~~~~~~~~~~~~~~~~`);
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setGame(`#help `,"http://twitch.tv/IxAx7")
+    client.user.setGame(`i!help `,"http://twitch.tv/IxAx7")
     client.user.setStatus("dnd")
  });
 
-var prefix = "#"
+var prefix = "i!"
 client.on('message', message => {
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
@@ -292,38 +292,38 @@ client.on('message', message => {
  :free: البوت مجاني %100
 Administrative Commands
  『#move @user / لسحب الشخص الى روومك』
-『#bc / رسالة جماعية الى كل اعضاء السيرفر』
-『#hchannel / اخفاء الشات』
-『#schannel / اضهار الشات المخفية』
-『#clear / مسح الشات』
-『#mute @user <reason> / اعطاء العضو ميوت لازم رتبة <Muted>』
-『#unmute @user / لفك الميوت عن الشخص 』
-『#kick @user <reason> / طرد الشخص من السيرفر』
-『#ban @user <reason> / حضر الشخص من السيرفر』
-『#mutechannel / تقفيل الشات』
-『#unmutechannel / فتح الشات』
-『#ct <name> / انشاء شات』
-『#cv <name> / انشاء رووم فويس』
+『i!bc / رسالة جماعية الى كل اعضاء السيرفر』
+『i!hchannel / اخفاء الشات』
+『i!schannel / اضهار الشات المخفية』
+『i!clear / مسح الشات』
+『i!mute @user <reason> / اعطاء العضو ميوت لازم رتبة <Muted>』
+『i!unmute @user / لفك الميوت عن الشخص 』
+『i!kick @user <reason> / طرد الشخص من السيرفر』
+『i!ban @user <reason> / حضر الشخص من السيرفر』
+『i!mutechannel / تقفيل الشات』
+『i!unmutechannel / فتح الشات』
+『i!ct <name> / انشاء شات』
+『i!cv <name> / انشاء رووم فويس』
 General Commands
-『#server / يعرض لك معلومات عن السيرفر』
-『#bot / يعرض لك كل معلومات البوت』
-『#fm / عرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص』
-『#id / معلومات عنك』
-『#allbots / لعرض جميع البوتات الي بالسيرفر』
-『#savatar / صورة السيرفر』
-『#avatar / صورتك او صورة الي تمنشنة』
-『#inv / لدعوة البوت الى سيرفرك』
-『#support / سيرفر الدعم』
-『#cont / ارسال اقتراح او لمراسلة صاحب البوت』
+『i!server / يعرض لك معلومات عن السيرفر』
+『i!bot / يعرض لك كل معلومات البوت』
+『i!fm / عرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص』
+『i!id / معلومات عنك』
+『i!allbots / لعرض جميع البوتات الي بالسيرفر』
+『i!savatar / صورة السيرفر』
+『i!avatar / صورتك او صورة الي تمنشنة』
+『i!inv / لدعوة البوت الى سيرفرك』
+『i!support / سيرفر الدعم』
+『i!cont / ارسال اقتراح او لمراسلة صاحب البوت』
 Music Commands
- 『#play / لتشغيل اغنية』
-『#skip / تخطي الأغنية』
-『#vol / رفع الصوت و خفض الصوت』
-『#stop / الخروج من رومك الصوتي』
-『#pause / ايقاف الاغنية مؤقتا』
-『#np / اظهار الاغنية اللي انت مشغلها حاليا』
-『#resume / تكملة الاغنية』
-『#queue / اظهار قائمة التشغيل』
+ 『i!play / لتشغيل اغنية』
+『i!skip / تخطي الأغنية』
+『i!vol / رفع الصوت و خفض الصوت』
+『i!stop / الخروج من رومك الصوتي』
+『i!pause / ايقاف الاغنية مؤقتا』
+『i!np / اظهار الاغنية اللي انت مشغلها حاليا』
+『i!resume / تكملة الاغنية』
+『i!queue / اظهار قائمة التشغيل』
 ====================
 
 `);
@@ -332,7 +332,7 @@ Music Commands
 });
 
 client.on("message", msg => {
-    var prefix = "#";
+    var prefix = "i!";
 if(msg.content.startsWith (prefix + "id")) {
 if(!msg.channel.guild) return msg.reply('**❌ اسف لكن هذا الامر للسيرفرات فقط **');         
 const embed = new Discord.RichEmbed();
@@ -352,7 +352,7 @@ msg.channel.send({embed: embed})
 });
 
 client.on('message', message => {
-                 var prefix = "#"
+                 var prefix = "i!"
            if (message.content.startsWith(prefix + "id")) {
      var args = message.content.split(" ").slice(1);
      let user = message.mentions.users.first();
@@ -423,7 +423,7 @@ let embed = new Discord.RichEmbed()
 
 
 client.on("message", message => {
-        var prefix = "#";// البرفكس
+        var prefix = "i!";// البرفكس
     if(message.content.startsWith(prefix + "setwlc")) {
         let args = message.mentions.channels.first();
             if(!args) message.channel.send("** منشن روم . :x:**").then(m => {    
@@ -451,7 +451,7 @@ m.delete(1500);
 });
 
 client.on("message", message => {
-        var prefix = "#";//البرفكس
+        var prefix = "i!";//البرفكس
     if(message.content.startsWith(prefix + "setout")) {
         let args = message.mentions.channels.first();
             if(!args) message.channel.send("** منشن روم . :x:**");
@@ -1294,7 +1294,7 @@ client.on('voiceStateUpdate', (voiceOld, voiceNew) => {
 });
 
     client.on('message', message => {
-        var prefix = "#";
+        var prefix = "i!";
         if (message.author.bot) return;
         if (!message.content.startsWith(prefix)) return;
 
@@ -1335,7 +1335,7 @@ client.on('message',async message => {
 
   
   if(message.content.startsWith(prefix + "credit")) {
-  if(args[0] !== `${prefix}credit` && args[0] !== `${prefix}credits`) return;
+  if(args[0] !== `i!{prefix}credit` && args[0] !== `i!{prefix}credits`) return;
 
   if(args[2]) {
     if(isNaN(args[2])) return message.channel.send('**:heavy_multiplication_x:| هذه الخانة يجب ان تتكون من ارقام وليس احرف.**');
@@ -1411,7 +1411,7 @@ client.on('message',async message => {
 });
 
 client.on("message", msg => {
-var prefix = "#";// البرفكس
+var prefix = "i!";// البرفكس
  if(msg.content.startsWith(prefix +  "bot")) {
 let embed24 = new Discord.RichEmbed()   
    .setThumbnail(client.user.avatarURL)
@@ -1505,7 +1505,7 @@ message.channel.send("``لا تستطيع سحب "+ message.mentions.members.fir
 message.react("❌")
  }}});
 
-var prefix = "#"
+var prefix = "i!"
 
 
 
@@ -1528,7 +1528,7 @@ client.on("message", message => {
 //bc online
 
 
-  var prefix = "#";
+  var prefix = "i!";
 
   client.on("message", message => {
   
