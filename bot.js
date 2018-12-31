@@ -16,7 +16,7 @@ const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
 
 const GOOGLE_API_KEY = 'AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8';
 const youtube = new YouTube(GOOGLE_API_KEY);
-const PREFIX = '#';
+const PREFIX = 'i!';
 
 const queue = new Map();
 const client = new Discord.Client({disableEveryone: true}); 
