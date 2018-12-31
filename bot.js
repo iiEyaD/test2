@@ -89,7 +89,7 @@ client.on('message', message => {
 }
 });
 
-var prefix = "#"
+var prefix = "i!"
 client.on('message', message => {
   if (message.author.x5bz) return;
   if (!message.content.startsWith(prefix)) return;
@@ -130,7 +130,7 @@ client.on('message', message => {
 });
 
 client.on("message", message => {
-    var prefix = "#";
+    var prefix = "h!";
  
             var args = message.content.substring(prefix.length).split(" ");
             if (message.content.startsWith(prefix + "clear")) {
@@ -153,7 +153,7 @@ client.on("message", message => {
 })
 
 client.on('message', async message =>{
-  var prefix = "'#";
+  var prefix = "'h!";
 const ms = require("ms");
 if (message.author.omar) return;
 if (!message.content.startsWith(prefix)) return;
@@ -291,7 +291,7 @@ Fz|ּا̍ڀــٰا̍د-̶E̶y̶a̶D̶#2019
 
  :free: البوت مجاني %100
 Administrative Commands
- 『#move @user / لسحب الشخص الى روومك』
+ 『i!move @user / لسحب الشخص الى روومك』
 『i!bc / رسالة جماعية الى كل اعضاء السيرفر』
 『i!hchannel / اخفاء الشات』
 『i!schannel / اضهار الشات المخفية』
